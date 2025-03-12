@@ -4,12 +4,13 @@ import './Rootlayout.css';
 
 const RootLayout = () => {
     return (
-        <div>
+        <div className='rootLayout'>
             <header>
-                <Link to="/">
+                <Link to="/" className='logo'>
                     <img src="/logo.png" alt="NeuralTalk Logo" />
                     <span>NeuralTalk</span>
                 </Link>
+                <div className="user">User</div>
             </header>
             <main>
                 <Outlet />
