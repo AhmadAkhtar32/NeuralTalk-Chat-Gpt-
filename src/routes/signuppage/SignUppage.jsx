@@ -4,7 +4,7 @@ import { SignUp } from '@clerk/clerk-react'
 
 const SignUppage = () => {
     return (
-        <div><SignUp /></div>
+        <div><SignUp path='/sign-up' signInUrl='/sign-in' /></div>
     )
 }
 
