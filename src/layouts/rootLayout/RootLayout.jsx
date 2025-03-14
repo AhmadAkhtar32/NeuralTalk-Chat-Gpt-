@@ -21,9 +21,7 @@ const RootLayout = () => {
                         <img src="/logo.png" alt="NeuralTalk Logo" />
                         <span>NeuralTalk</span>
                     </Link>
-                    <div className="user"> <SignedOut>
-                        <SignInButton />
-                    </SignedOut>
+                    <div className="user">
                         <SignedIn>
                             <UserButton />
                         </SignedIn>

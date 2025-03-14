@@ -7,13 +7,10 @@ import RootLayout from './layouts/rootLayout/RootLayout.jsx';
 import DashboardLayout from './layouts/dashboardLayout/DashboardLayout.jsx';
 import Dashboardpage from './routes/dashboardpage/Dashboardpage.jsx';
 import Chatpage from './routes/chatpage/Chatpage.jsx';
+import SignInpage from './routes/signinpage/SignInpage.jsx';
+import SignUppage from './routes/signuppage/SignUppage.jsx';
 
-// Import your Publishable Key
-const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
 
-if (!PUBLISHABLE_KEY) {
-  throw new Error("Missing Publishable Key")
-}
 
 
 const router = createBrowserRouter([
@@ -23,6 +20,14 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Homepage />,
+      },
+      {
+        path: '/sign-in*',
+        element: <SignInpage />,
+      },
+      {
+        path: '/sign-up*',
+        element: <SignUppage />,
       },
       {
         element: <DashboardLayout />,
