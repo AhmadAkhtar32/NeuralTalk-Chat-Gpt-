@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import './Rootlayout.css';
-import { ClerkProvider } from '@clerk/clerk-react';
+import { ClerkProvider, SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
 
 // Import your Publishable Key
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
@@ -21,7 +21,13 @@ const RootLayout = () => {
                         <img src="/logo.png" alt="NeuralTalk Logo" />
                         <span>NeuralTalk</span>
                     </Link>
-                    <div className="user">User</div>
+                    <div className="user"> <SignedOut>
+                        <SignInButton />
+                    </SignedOut>
+                        <SignedIn>
+                            <UserButton />
+                        </SignedIn>
+                    </div>
                 </header>
                 <main>
                     <Outlet />
