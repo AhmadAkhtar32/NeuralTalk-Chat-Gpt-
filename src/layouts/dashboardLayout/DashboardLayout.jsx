@@ -4,6 +4,7 @@ import { Outlet, useNavigate } from 'react-router-dom'
 
 
 
+
 const DashboardLayout = () => {
 
     const { userId, isLoaded } = useAuth()
@@ -22,7 +23,7 @@ const DashboardLayout = () => {
 
     return (
         <div>
-            <div className="menu">MENU</div>
+            <div className="menu"><chatList /></div>
             <div className="content"><Outlet /></div>
         </div>
     )
