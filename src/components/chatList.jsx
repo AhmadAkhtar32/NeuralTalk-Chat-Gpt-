@@ -20,6 +20,10 @@ const chatList = () => {
             <hr />
             <div className="upgrade">
                 <img src="/logo.png" alt="" />
+                <div className="texts">
+                    <span>Upgrade to Pro</span>
+                    <span>Unlock all features</span>
+                </div>
             </div>
 
         </div>
