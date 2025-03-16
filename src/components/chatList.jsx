@@ -1,7 +1,7 @@
 import React from 'react'
 import '/chatList.css'
 
-const chatList = () => {
+const ChatList = () => {
     return (
         <div>
             <span className='title '>Dashboard</span>
@@ -30,4 +30,4 @@ const chatList = () => {
     )
 }
 
-export default chatList
+export default ChatList
