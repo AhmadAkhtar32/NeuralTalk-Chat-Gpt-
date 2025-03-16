@@ -3,7 +3,26 @@ import '/chatList.css'
 
 const chatList = () => {
     return (
-        <div>chatList</div>
+        <div>
+            <span className='title '>Dashboard</span>
+            <Link to="/dasboard">Create A New Chat</Link>
+            <Link to="/">Explore NeuralTalk</Link>
+            <Link to="/">Contact</Link>
+            <hr />
+            <div className="list">
+                <Link to="/">My Chat Title</Link>
+                <Link to="/">My Chat Title</Link>
+                <Link to="/">My Chat Title</Link>
+                <Link to="/">My Chat Title</Link>
+                <Link to="/">My Chat Title</Link>
+                <Link to="/">My Chat Title</Link>
+            </div>
+            <hr />
+            <div className="upgrade">
+                <img src="/logo.png" alt="" />
+            </div>
+
+        </div>
     )
 }
 
