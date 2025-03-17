@@ -7,7 +7,7 @@ const ChatList = () => {
     return (
         <div>
             <span className='title '>Dashboard</span>
-            <Link to="/dasboard">Create A New Chat</Link>
+            <Link to="/dashboard">Create A New Chat</Link>
             <Link to="/">Explore NeuralTalk</Link>
             <Link to="/">Contact</Link>
             <hr />
