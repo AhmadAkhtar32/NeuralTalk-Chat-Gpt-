@@ -5,6 +5,8 @@ import ChatList from '../../components/chatList/ChatList'
 
 
 
+
+
 const DashboardLayout = () => {
 
     const { userId, isLoaded } = useAuth()
@@ -23,7 +25,9 @@ const DashboardLayout = () => {
 
     return (
         <div>
-            <div className="menu"><ChatList /></div>
+            <div className="menu">
+                <ChatList />
+            </div>
             <div className="content"><Outlet /></div>
         </div>
     )
