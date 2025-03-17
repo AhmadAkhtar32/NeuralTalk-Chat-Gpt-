@@ -1,5 +1,7 @@
 import React from 'react'
-import '/chatList.css'
+import "./chatList.css";
+import { Link } from 'react-router-dom';
+
 
 const ChatList = () => {
     return (
