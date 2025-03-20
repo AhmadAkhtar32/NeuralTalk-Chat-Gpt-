@@ -1,3 +1,4 @@
+/* ChatList file */
 import React from 'react'
 import "./chatList.css";
 import { Link } from 'react-router-dom';
