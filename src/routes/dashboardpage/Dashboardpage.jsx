@@ -1,3 +1,4 @@
+/*Dashboard page file*/
 import React from 'react'
 import './Dashboardpage.css'
 
