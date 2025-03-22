@@ -1,10 +1,8 @@
-/*Css file for dashoboard*/
-
 .dashboardLayout {
     display: flex;
     gap: 50px;
     padding-top: 20px;
-    height: 100px;
+    height: 100%;
 
     .menu {
         flex: 1;
