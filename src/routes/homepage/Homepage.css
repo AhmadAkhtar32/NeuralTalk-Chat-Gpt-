@@ -1,8 +1,5 @@
-/*Css file for homepage*/
-
 .homepage {
     display: flex;
-    flex-direction: column;
     align-items: center;
     gap: 100px;
     height: 100%;
@@ -20,39 +17,40 @@
         justify-content: center;
         gap: 16px;
         text-align: center;
-    }
 
-    .h1 {
-        font-size: 128px;
-        color: linear-gradient(to right, #217bfe, #e55571);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
+        h1 {
+            font-size: 128px;
+            background: linear-gradient(to right, #217bfe, #e55571);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
 
-        @media screen and (max-width: 1280px) {
-            font-size: 64px;
+            @media screen and (max-width: 1280px) {
+                font-size: 64px;
+            }
         }
-    }
 
-    .h3 {
-        font-weight: 400;
-        max-width: 70%;
+        h3 {
+            font-weight: 400;
+            max-width: 70%;
 
-        @media screen and (max-width: 1024px) {
-            max-width: 100%;
+            @media screen and (max-width: 1024px) {
+                max-width: 100%;
+            }
         }
-    }
 
-    a {
-        padding: 15px 25px;
-        background-color: #217bfe;
-        color: white;
-        border-radius: 20px;
-        font-size: 14px;
-        margin-top: 20px;
+        a {
+            padding: 15px 25px;
+            background-color: #217bfe;
+            color: white;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-top: 20px;
 
-        &:hover {
-            background-color: #1a6ac9;
+            &:hover {
+                background-color: white;
+                color: #217bfe;
+            }
         }
     }
 
@@ -90,7 +88,6 @@
                     background-size: auto 100%;
                     animation: 8s ease-in-out infinite alternate slideBg;
                 }
-
             }
 
             .bot {
@@ -134,7 +131,7 @@
         bottom: 0;
         left: 0;
         opacity: 0.05;
-        animation: 100s linear infinite rotateorbital;
+        animation: 100s linear infinite rotateOrbital;
         z-index: -1;
     }
 
@@ -157,18 +154,18 @@
             display: flex;
             gap: 10px;
             color: #888;
-            font-size: 12px;
+            font-size: 10px;
         }
     }
 }
 
-@keyframes rotateorbital {
+@keyframes rotateOrbital {
     0% {
         transform: rotate(0deg);
     }
 
     100% {
-        transform: rotate(360deg);
+        transform: rotate(60deg);
     }
 }
 
