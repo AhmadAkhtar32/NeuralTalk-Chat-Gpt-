@@ -8,10 +8,12 @@ const ChatList = () => {
     return (
         <div>
             <span className='title '>Dashboard</span>
+
             <Link to="/dashboard">Create A New Chat</Link>
             <Link to="/">Explore NeuralTalk</Link>
             <Link to="/">Contact</Link>
             <hr />
+            <span className='title '>RECENT CHATS</span>
             <div className="list">
                 <Link to="/">My Chat Title</Link>
                 <Link to="/">My Chat Title</Link>
